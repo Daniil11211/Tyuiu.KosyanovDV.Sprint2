@@ -1,6 +1,6 @@
-﻿using Tyuiu.KosyanovDV.Sprint2.Task0.V3.Lib;
+﻿using Tyuiu.KosyanovDV.Sprint2.Task1.V14.Lib;
 
-namespace Tyuiu.KosyanovDV.Sprint2.Task0.V3
+namespace Tyuiu.KosyanovDV.Sprint2.Task1.V14
 {
     class Program
     {
@@ -11,40 +11,49 @@ namespace Tyuiu.KosyanovDV.Sprint2.Task0.V3
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Тема: Операции сравнения                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #3                                                              *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #14                                                             *");
             Console.WriteLine("* Выполнил: Косьянов Даниил Васильевич | ПКТб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу из операций сравнений                                *");
-            Console.WriteLine("* (==, !=, <, >, <=, >=, последовательность операций не должна нарушаться)*");
-            Console.WriteLine("* и арифметических выражений, которая вернет логическую последовательность*");
-            Console.WriteLine("* (массив): (False, True, False, True, False, True), при x = 45, y = 127  *");
+            Console.WriteLine("* (==, !=, <, >, <=, >=, последовательность операций можно чередовать,    *");
+            Console.WriteLine("* но использовать один раз в выражении) и логических операций             *");
+            Console.WriteLine("* (|, &, ||, &&, !, ^, последовательность операций не должна нарушаться)  *");
+            Console.WriteLine("* а также арифметических выражений, которая вернет логическую             *");
+            Console.WriteLine("* последовательность (массив): (False, True, True, True, True, False)     *");
+            Console.WriteLine("* при a = 185, b = 216, c = 174, d = 917                                  *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 45;
-            int y = 127;
+            int a = 185;
+            int b = 216;
+            int c = 174;
+            int d = 917;
 
-            Console.WriteLine($"* X = {x}                                                                  *");
-            Console.WriteLine($"* Y = {y}                                                                 *");
+            Console.WriteLine($"* a = {a}                                                                 *");
+            Console.WriteLine($"* b = {b}                                                                 *");
+            Console.WriteLine($"* c = {c}                                                                 *");
+            Console.WriteLine($"* d = {d}                                                                 *");
+
+
 
             bool[] res = new bool[6];
-            res = ds.GetCompareOperations(x, y);
+            res = ds.GetLogicOperations(a, b, c, d);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6; i++)
             {
-                
-                if (res[i] == false) 
+
+                if (res[i] == false)
                 {
                     Console.WriteLine($"* {res[i]}                                                                   *");
                 }
-                        
+
                 else
                 {
                     Console.WriteLine($"* {res[i]}                                                                    *");
