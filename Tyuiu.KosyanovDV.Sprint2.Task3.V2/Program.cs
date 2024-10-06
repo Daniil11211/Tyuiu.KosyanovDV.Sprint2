@@ -1,4 +1,4 @@
-﻿using Tyuiu.KosyanovDV.Sprint2.Task2.V6.Lib;
+﻿using Tyuiu.KosyanovDV.Sprint2.Task3.V2.Lib;
 
 namespace Tyuiu.KosyanovDV.Sprint2.Task2.V6
 {
@@ -10,45 +10,33 @@ namespace Tyuiu.KosyanovDV.Sprint2.Task2.V6
             Console.Title = "Спринт #2 | Выполнил: Косьянов Д. В. | ПКТб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Оператор if                                                       *");
-            Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #6                                                              *");
+            Console.WriteLine("* Тема: Вложенные операторы if - else                                     *");
+            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Вариант #2                                                              *");
             Console.WriteLine("* Выполнил: Косьянов Даниил Васильевич | ПКТб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу на, которая запрашивает целые значения с клавиатуры  *");
-            Console.WriteLine("* и вычисляет находится ли точка с координатами                           *");
-            Console.WriteLine("* X,Y в заштрихованной области.                                           *");
+            Console.WriteLine("* Написать программу, которая вычисляет требуемое значение функции Y      *");
+            Console.WriteLine("* с использованием вложенных оператор if-else, где пользователь вводит    *");
+            Console.WriteLine("* значение переменной X с клавиатуры.                                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x, y;
+            double x;
 
-            Console.WriteLine("* Введите значение x: ");
+            Console.WriteLine("* Введите значение X: ");
 
-            x = Convert.ToInt32(Console.ReadLine());
+            x = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("* Введите значение y: ");
-
-            y = Convert.ToInt32(Console.ReadLine());
-            
-            bool res = ds.CheckDotInShadedArea(x, y);
+            double res = ds.Calculate(x);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-                if (res == false)
-                {
-                    Console.WriteLine($"* {res}                                                                   *");
-                }
+            Console.WriteLine($"*{res}                                                                  ");
 
-                else
-                {
-                    Console.WriteLine($"* {res}                                                                    *");
-                }
-            
             Console.WriteLine("***************************************************************************");
 
 
