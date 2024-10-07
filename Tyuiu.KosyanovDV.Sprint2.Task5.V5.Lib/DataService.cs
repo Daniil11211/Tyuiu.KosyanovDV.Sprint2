@@ -11,31 +11,31 @@ namespace Tyuiu.KosyanovDV.Sprint2.Task5.V5.Lib
                 default:
                     throw new ArgumentException($"Такой карты не существует. Введите целочисленное значение от 6 до 14. Value = {value}");
                 case 6:
-                    res = "Шестёрка";
+                    res = "шестёрка";
                     break;
                 case 7:
-                    res = "Семёрка";
+                    res = "семёрка";
                     break;
                 case 8:
-                    res = "Восьмёрка";
+                    res = "восьмёрка";
                     break;
                 case 9:
-                    res = "Девятка";
+                    res = "девятка";
                     break;
                 case 10:
-                    res = "Десятка";
+                    res = "десятка";
                     break;
                 case 11:
-                    res = "Валет";
+                    res = "валет";
                     break;
                 case 12:
-                    res = "Дама";
+                    res = "дама";
                     break;
                 case 13:
-                    res = "Король";
+                    res = "король";
                     break;
                 case 14:
-                    res = "Туз";
+                    res = "туз";
                     break;
             }
             return res;
