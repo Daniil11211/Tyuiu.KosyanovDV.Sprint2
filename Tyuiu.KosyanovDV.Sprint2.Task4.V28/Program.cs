@@ -1,6 +1,6 @@
 ﻿using Tyuiu.KosyanovDV.Sprint2.Task4.V28.Lib;
 
-namespace Tyuiu.KosyanovDV.Sprint2.Task2.V6
+namespace Tyuiu.KosyanovDV.Sprint2.Task4.V28
 {
     class Program
     {
